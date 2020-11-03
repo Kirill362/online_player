@@ -1,12 +1,22 @@
 # Онлайн плеер
 Этот проект создаёт плеер для видео.
 ## Пример запуска
-1. Устанавливаем библиотеку `pip install livereload`
-2. Запускаем скрипт командой `livereload dist`
-3. В терминал будет выведенно следующее:   
-[I 201027 20:15:45 server:335] Serving on http://127.0.0.1:35729  
-[I 201027 20:15:45 handlers:62] Start watching changes  
-[I 201027 20:15:45 handlers:64] Start detecting changes   
-3. Готовый плеер будет расположен по этой ссылке [http://127.0.0.1:35729](http://127.0.0.1:35729).
+1. Python3 должен быть уже установлен.
+
+3. Рекомендуется использовать [virtualenv/venv](https://docs.python.org/3/library/venv.html) для изоляции проекта.
+
+2. Используйте pip (или pip3, есть конфликт с Python2) для установки зависимостей:
+   
+   `pip install -r requirements.txt`
+   
+4. Для автообновления сайта введите:
+   
+   `livereload index.html`
+   
+   и откройте в браузере ссылку: 
+   
+   [I 201103 19:24:20 server:335] Serving on http://127.0.0.1:35729
+   
+   Библиотека [livereload](https://github.com/lepture/python-livereload).
 ## Цель проекта
 Код написан в образовательных целях на онлайн-курсе для веб-разработчиков [dvmn.org](https://dvmn.org/modules/).
