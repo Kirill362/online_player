@@ -22,10 +22,10 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: black
+    background-color: black;
   }
 
-  .container {
+  .player_main_container {
     display: flex;
     flex-direction: column;
     width: 800px;
@@ -36,10 +36,10 @@
 
   .video_container {
     width: 100%;
-    height: 100%
+    height: 100%;
   }
 
-  .empty_block {
+  .button_empty_block {
     display: flex;
     flex-grow: 1;
   }
@@ -47,14 +47,14 @@
 </style>
 </head>
 <body>
-  <div class="container " id="player">
+  <div class="player_main_container" id="player">
     <div class="js-video-container video_container"></div>
     <div class="player_buttons">
       <button class="js-play-button player_button"><i class="fa fa-play" aria-hidden="true"></i></button>
       <button class="js-pause-button player_button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
       <button class="js-mute-button player_button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
       <button class="js-volume-button player_button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i></button>
-      <div class="empty_block"></div>
+      <div class="button_empty_block"></div>
       <button class="js-fullscreen-button player_button"><i class="fa fa-expand" aria-hidden="true"></i></button>
     </div>
     <!-- Here can be placed player controls: play and volume buttons -->

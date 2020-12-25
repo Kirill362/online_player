@@ -4,10 +4,13 @@
 1. Python3 должен быть уже установлен.
 
 2. Рекомендуется использовать [virtualenv/venv](https://docs.python.org/3/library/venv.html) для изоляции проекта.
+
+3. Используйте pip (или pip3, есть конфликт с Python2) для установки зависимостей:   
+`pip install -r requirements.txt`
    
-3. Для автообновления сайта введите:
+4. Для автообновления сайта введите:
    
-   `livereload index.html`
+   `livereload ../online_player`
    
    и откройте в браузере ссылку: 
    
