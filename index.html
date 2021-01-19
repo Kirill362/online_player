@@ -54,6 +54,7 @@
   }
 
   .video_time_block {
+  justify-content: space-between;
   padding-top: 9px;
   font-size: 13px;
   display: flex;
@@ -69,13 +70,48 @@
 
   .left_block {
     padding-left: 5px;
-    flex-grow: 1;
   }
 
   .right_block {
-    padding-left: 465px;
-    flex-grow: 1;
+    padding-right: 1px;
   }
+
+  .progressbar {
+    margin-top: 2.6px;
+    margin-left: 3.6px;
+    margin-right: 3.6px;
+    border-radius: 2px;
+    height: 4px;
+    flex-grow: 1;
+    margin-bottom: 10px;
+  }
+
+  .js-progress-slider {
+    margin-top: 2.6px;
+    margin-left: 3.6px;
+    margin-right: 3.6px;
+    border-radius: 2px;
+    height: 4px;
+    margin-bottom: 10px;
+  }
+
+  .slider {
+  margin-left: -12px;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  height: 5px;
+  width: 5px;
+  background-color: Red;
+  border-radius: 50%;
+  display: inline-block;
+  }
+
+  .progress-and-slider {
+  display: flex;
+  flex-direction: row;
+  }
+
 
 </style>
 </head>
@@ -92,6 +128,10 @@
       <div class="video_time_block">
         <div class="left_block">
           <span class="js-current-time"></span>
+        </div>
+        <div class="js-progress progressbar progress-and-slider">
+          <div class="js-progress-slider" style="background-color: red;"> </div>
+          <span class="slider"></span>
         </div>
         <div class="right_block">
           <span class="js-duration"></span>
