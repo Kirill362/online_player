@@ -97,29 +97,33 @@
   }
 
   .slider {
-  transition-property: opacity;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in, easy-out;
-  opacity: 0;
-  margin-left: -12px;
-  border-style: solid;
-  border-color: white;
-  border-width: 3px;
-  height: 5px;
-  width: 5px;
-  background-color: Red;
-  border-radius: 50%;
-  display: inline-block;
+    transition-property: opacity;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in, easy-out;
+    opacity: 0;
+    margin-left: -12px;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    height: 5px;
+    width: 5px;
+    background-color: Red;
+    border-radius: 50%;
+    display: inline-block;
   }
 
   .progress-and-slider {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 
   .video_time_block:hover .slider {
-          opacity: 1;
-      }
+    opacity: 1;
+  }
+
+  :focus {
+    outline: 0;
+  }
 
 
 </style>
