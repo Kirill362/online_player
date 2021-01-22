@@ -87,6 +87,7 @@
   }
 
   .js-progress-slider {
+    background-color: red;
     margin-top: 2.6px;
     margin-left: 3.6px;
     margin-right: 3.6px;
@@ -96,6 +97,10 @@
   }
 
   .slider {
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in, easy-out;
+  opacity: 0;
   margin-left: -12px;
   border-style: solid;
   border-color: white;
@@ -111,6 +116,10 @@
   display: flex;
   flex-direction: row;
   }
+
+  .video_time_block:hover .slider {
+          opacity: 1;
+      }
 
 
 </style>
@@ -130,7 +139,7 @@
           <span class="js-current-time"></span>
         </div>
         <div class="js-progress progressbar progress-and-slider">
-          <div class="js-progress-slider" style="background-color: red;"> </div>
+          <div class="js-progress-slider"> </div>
           <span class="slider"></span>
         </div>
         <div class="right_block">
